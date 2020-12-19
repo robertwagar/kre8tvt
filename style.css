@@ -48,3 +48,73 @@ body {
     border-radius: 50%;
     box-shadow: 0 -20px 20px rgba(31, 28, 28, 0.336), inset 0 -10px 10px rgba(233, 227, 227, 0.267), 0 15px 15px rgba(31, 28, 28, 0.37), inset 0 10px 10px rgba(31, 28, 28, 0.37);
 }
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(185, 239, 243);
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.418));
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.clock .hour,
+.clock .minute,
+.clock .second {
+    position: absolute;
+}
+
+.clock .hour, .h {
+    width: 180px;
+    height: 180px;
+}
+
+.clock .minute, .min {
+    width: 200px;
+    height: 200px;
+}
+
+.clock .second, .sec {
+    width: 220px;
+    height: 220px;
+}
+
+.h, .min, .sec {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    border-radius: 50%;
+}
+.h:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 90px;
+    background: rgb(98, 224, 224);
+    border-radius: 6px 6px 0 0;
+    z-index: 6;
+}
+
+
+.sec:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background: rgb(118, 214, 219);
+    border-radius: 3px 3px 0 0;
+    z-index: 4;
+}
+
+.min:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 130px;
+    background: rgb(169, 220, 223);
+    border-radius: 1px 1px 0 0;
+    z-index: 2;
+}
