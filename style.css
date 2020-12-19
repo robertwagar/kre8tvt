@@ -14,8 +14,8 @@ html {
     justify-content: center;
 
     /* background img in html behind body background */
-
-    background-image: url(./disconnected.jpg);
+    
+    background-image: url(./connected.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -24,19 +24,32 @@ html {
 
     --bg: rgb(206, 206, 214);
     --bg-nav:  transparent;
-    --icon: rgba(113, 197, 127, 0.753);
+    --icon: rgba(7, 7, 27, 0.753);
+    --toggle: rgb(14, 15, 58);
+    --bg-toggle: rgba(221, 211, 211, 0.89);
     --bg-hover: rgba(15, 24, 78, 0.911);
+    --clock-frame: rgb(12, 12, 56);
     
 }
 
 
 html[data-theme='dark'] {
+    
+    background-image: url(./disconnected.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
     --bg: #2c2c2c;
     --overlay: black;
     --bg-nav: transparent;
     --icon: whitesmoke;
-    --check: rgb(105, 10, 10);
+    --toggle:  rgb(14, 15, 58);
+    --check: rgb(230, 224, 224);
     --bg-hover: rgba(236, 231, 231, 0.918);
+    --clock-frame: rgb(122, 231, 131);
+    --clock-fr: ;
 }
 
     
@@ -113,7 +126,7 @@ label {
 	text-indent: -9999px;
 	width: 40px;
 	height: 20px;
-	background: grey;
+	background: var(--bg-toggle);
 	float: right;
 	border-radius: 100px;
 	position: relative;
@@ -126,7 +139,7 @@ label:after {
 	left: 3px;
 	width: 16px;
 	height: 16px;
-	background: #fff;
+	background: var(--toggle);
 	border-radius: 90px;
 	transition: 0.3s;
 }
@@ -187,7 +200,7 @@ html.transition *:after {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    opacity: 0.8;
+    opacity: 0.7;
     
 }
 
@@ -199,7 +212,7 @@ html.transition *:after {
     max-width: 320px;
     max-height: 320px;
     border-radius: 50%;
-    border: 3px solid rgb(122, 231, 131);
+    border: 3px solid var(--clock-frame);
     justify-content: center;
     align-items: center;
     z-index: 20;
