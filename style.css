@@ -25,8 +25,8 @@ html {
     --bg: rgb(206, 206, 214);
     --bg-nav:  transparent;
     --icon: rgba(7, 7, 27, 0.753);
-    --toggle: rgb(14, 15, 58);
-    --bg-toggle: rgba(221, 211, 211, 0.89);
+    --bg-toggle: rgb(14, 15, 58);
+    --toggle: rgba(221, 211, 211, 0.89);
     --bg-hover: rgba(15, 24, 78, 0.911);
     --clock-frame: rgb(12, 12, 56);
     
