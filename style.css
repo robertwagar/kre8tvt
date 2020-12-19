@@ -11,8 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
-    filter: drop-shadow(0px 0px 10px #c0c0c071);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -21,26 +20,19 @@ body {
     top: 50px;
     left: 50px;
     display: flex;
-    background-color: rgb(15, 16, 36);
     width: 320px;
     height: 320px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-}
-.line {
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    z-index: 3;
-    border: 10px solid rgb(22, 161, 161);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: line 60s  infinite;
-}
+     /* trying to crete a glass effect on the clock */
 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
 
 
 .clock {
@@ -52,8 +44,10 @@ body {
     align-items: center;
     border: 1px solid rgb(230, 189, 238);
     border-radius: 50%;
-    box-shadow: 0 -10px 10px rgba(14, 13, 13, 0.692), inset 0 -10px 10px rgba(29, 26, 26, 0.555), 
-                    0 10px 10px rgba(31, 28, 28, 0.37), inset 0 10px 10px rgba(31, 28, 28, 0.37);
+    /* box-shadow: 0 -10px 10px rgba(14, 13, 13, 0.692), inset 0 -10px 10px rgba(29, 26, 26, 0.555), 
+                    0 10px 10px rgba(31, 28, 28, 0.37), inset 0 10px 10px rgba(31, 28, 28, 0.37); */
+                    
+
 }
 
 .clock:before {
