@@ -13,6 +13,40 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(9, 5, 29);
+    background-color: black;
+    filter: drop-shadow(0px 0px 40px #c0c0c071);
 }
 
+
+.clockFrame {
+    position: absolute;
+    display: flex;
+    background-color: rgb(27, 61, 77);
+    width: 500px;
+    height: 320px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    border: 1px solid rgb(145, 245, 245);
+    border-radius: 50%;
+    
+}
+
+
+.clock {
+    z-index: 2;
+    width: 295px;
+    height: 295px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(230, 189, 238);
+    border-radius: 50%;
+    box-shadow: 0 -20px 20px rgba(31, 28, 28, 0.336), inset 0 -10px 10px rgba(233, 227, 227, 0.267), 0 15px 15px rgba(31, 28, 28, 0.37), inset 0 10px 10px rgba(31, 28, 28, 0.37);
+}
