@@ -25,6 +25,15 @@ let trans = () => {
 
 
 //////////////////////////////////////////////////////////
+
+const clock = document.querySelector('.clockFrame');
+const clockBtn = document.querySelector('.clock-btn');
+
+clockBtn.addEventListener('click', (e) => {
+    clock.style.visibility = 'visible';
+    
+
+})
 /* CLOCK JS */
 const deg = 6;
 const hour = document.querySelector('#h');
@@ -42,4 +51,4 @@ hour.style.transform = `rotateZ(${(h)+(m/12)}deg)`;
 min.style.transform = `rotateZ(${m}deg)`;
 sec.style.transform = `rotateZ(${s}deg)`;
 
-})
+});

@@ -24,7 +24,7 @@ html {
 
     --bg: rgb(206, 206, 214);
     --bg-nav:  transparent;
-    --icon: black;
+    --icon: rgba(113, 197, 127, 0.753);
     --bg-hover: rgba(15, 24, 78, 0.911);
     
 }
@@ -199,12 +199,12 @@ html.transition *:after {
     max-width: 320px;
     max-height: 320px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid rgb(122, 231, 131);
     justify-content: center;
     align-items: center;
-    z-index: 10;
-    top: 50px;
-    left: 20px;
+    z-index: 20;
+    top: 300px;
+    left: 200px;
     visibility: hidden;
     
 }
