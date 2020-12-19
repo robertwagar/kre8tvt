@@ -1,17 +1,126 @@
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* DARK MODE CSS HTML */
+html {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    --bg: whitesmoke;
+    --bg-nav:  #f0eaeae0;
+    --icon: black;
+}
+
+
+html[data-theme='dark'] {
+    --bg: #2c2c2c;
+    --overlay: black;
+    --bg-nav: rgba(0, 0, 0, 0.74);
+    --icon: whitesmoke;
+}
+
+    
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: black;
+    width: 100vw;
+    background-color: var(--bg)
+    }
+
+    
+/* ////////////////////////////////////////////////////////// */
+/* /////////////////////// NAVBAR ////////////////////////// */
+
+nav {
+    width: 100px;
+    height: 200px;
+    padding: 0;
+    background: var(--bg-nav);
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    display: block;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    text-align: center;
+    visibility: ;
+}
+.clock-btn {
+    width: 20px;
+    height: 20px;
+
+}
+.darkmode-btn {
+    width: 20px;
+    height: 20px;
+}
+
+i {
+    font-size: 30px;
+    color: var(--icon);
+}
+
+
+
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-headings);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 /* ============== BACKGROUND ====== */
@@ -44,28 +153,15 @@ body {
 .overlay {
     position: absolute;
     z-index: 5;
-    background: radial-gradient(ellipse at bottom, rgba(22, 21, 21, 0.767), rgb(5, 2, 26));
+    background: var(--overlay);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    opacity: 0.5;
+    opacity: 0.8;
     
 }
 
-/* ////////////////////////////////////////////////////////// */
-/* /////////////////////// NAVBAR ////////////////////////// */
-
-nav {
-    width: 100px;
-    height: 400px;
-    background: green;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-}
 
 /*  CLOCK */
 .clockFrame {
@@ -80,6 +176,7 @@ nav {
     z-index: 10;
     top: 50px;
     left: 20px;
+    visibility: hidden;
     
 }
 
