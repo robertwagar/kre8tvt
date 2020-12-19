@@ -18,6 +18,8 @@ body {
 
 .clockFrame {
     position: absolute;
+    top: 50px;
+    left: 50px;
     display: flex;
     background-color: rgb(15, 16, 36);
     width: 320px;
@@ -26,15 +28,19 @@ body {
     justify-content: center;
     align-items: center;
 }
-#clock {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    z-index: 1;
-    border: 1px solid rgb(145, 245, 245);
+.line {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    z-index: 3;
+    border: 10px solid rgb(22, 161, 161);
     border-radius: 50%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: line 60s  infinite;
 }
+
 
 
 .clock {
