@@ -13,6 +13,15 @@ html {
     align-items: center;
     justify-content: center;
 
+    /* background img in html behind body background */
+
+    background-image: url(./disconnected.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
     --bg: rgb(206, 206, 214);
     --bg-nav:  transparent;
     --icon: black;
@@ -42,6 +51,16 @@ body {
     
 /* ////////////////////////////////////////////////////////// */
 /* /////////////////////// NAVBAR ////////////////////////// */
+
+.creativity {
+    color: whitesmoke;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    margin: auto;
+    z-index: 10;
+}
 
 nav {
     width: 100px;
@@ -133,15 +152,15 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-/* ============== BACKGROUND ====== */
+/* ============== BACKGROUND overlay grid ====== */
 .container {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 80vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 15fr 50fr 10fr 5fr;
+    grid-template-columns: 15fr 30fr 10fr 5fr;
     grid-template-rows: 10fr 35fr 25fr;
-    grid-gap: 0.5vh;
+    grid-gap: 3vh;
     }
     
     .img {
@@ -290,3 +309,121 @@ html.transition *:after {
     border-radius: 1px 1px 0 0;
     z-index: 28;
 }
+
+
+
+
+/* ===================== SVG LOGO / PATH for animation ===============*/
+#logo {
+    
+    animation: logoFill 0.5s ease forwards 2s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 354.5px;
+    stroke-dashoffset: 353.08px;
+    animation: logo-path 1.5s ease forwards 0.2s;
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: logo-path 1.5s ease forwards 0.4s;
+}
+
+#logo path:nth-child(3){
+    stroke-dasharray: 470px;
+    stroke-dashoffset: 470px;
+    animation: logo-path 1.5s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4){
+    stroke-dasharray: 246px;
+    stroke-dashoffset: 246px;
+    animation: logo-path 1.5s ease forwards 0.8s;
+}
+
+#logo path:nth-child(5){
+    stroke-dasharray: 184px;
+    stroke-dashoffset: 184px;
+    animation: logo-path 1.5s ease forwards 1s;
+}
+
+#logo path:nth-child(6){
+    stroke-dasharray: 76px;
+    stroke-dashoffset: 76px;
+    animation: logo-path 1.5s ease forwards 1.2s;
+}
+
+#logo path:nth-child(7){
+    stroke-dasharray: 388px;
+    stroke-dashoffset: 388px;
+    animation: logo-path 1.5s ease forwards 1.3s;
+}
+
+#logo path:nth-child(8){
+    stroke-dasharray: 264px;
+    stroke-dashoffset: 264px;
+    animation: logo-path 1.5s ease forwards 1.5s;
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: logo-path 1.5s ease forwards 1.8s;
+}
+
+#logo path:nth-child(10){
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 315px;
+    animation: logo-path 1.5s ease forwards 1.3s;
+}
+
+#logo path:nth-child(11){
+    stroke-dasharray: 264px;
+    stroke-dashoffset: 264px;
+    animation: logo-path 1.5s ease forwards 1s;
+}
+
+#logo path:nth-child(12){
+    stroke-dasharray: 354px;
+    stroke-dashoffset: 354px;
+    animation: logo-path 1.5s ease forwards 0.8s;
+}
+
+#logo path:nth-child(13){
+    stroke-dasharray: 264px;
+    stroke-dashoffset: 264px;
+    animation: logo-path 1.5s ease forwards 0.6s;
+}
+
+#logo path:nth-child(14){
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 315px;
+    animation: logo-path 1.5s ease forwards 0.4s;
+}
+
+#logo path:nth-child(15){
+    stroke-dasharray: 184px;
+    stroke-dashoffset: 184px;
+    animation: logo-path 1.5s ease forwards 0.2s;
+}
+
+@keyframes logo-path {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes logoFill {
+
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+        
+    }
+    
+}
+
+/* =============== end of SVG logo ===================*/
