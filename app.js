@@ -30,8 +30,12 @@ const clock = document.querySelector('.clockFrame');
 const clockBtn = document.querySelector('.clock-btn');
 
 clockBtn.addEventListener('click', (e) => {
-    clock.style.visibility = 'visible';
-    
+
+    if(clock.style.display === 'block'){
+    clock.style.display = 'none';
+} else {
+    clock.style.display = 'block';
+}
 
 })
 /* CLOCK JS */

@@ -70,7 +70,7 @@ body {
     width: 400px;
     height: 100px;
     position: absolute;
-    top: 50px;
+    top: 40px;
     margin: auto;
     z-index: 10;
 }
@@ -78,18 +78,15 @@ body {
 nav {
     width: 100px;
     height: 200px;
-    margin: auto;
-    padding: 20px;
     background: var(--bg-nav);
     position: absolute;
-    top: 20px;
-    left: 100px;
+    top: 30%;
+    left: 0px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-content: center;
     z-index: 10;
-    visibility: ;
 }
 .btn {
     padding: 30px;
@@ -218,8 +215,7 @@ html.transition *:after {
     z-index: 20;
     top: 300px;
     left: 200px;
-    visibility: hidden;
-    
+    display: none;
 }
 
 .clockFrame:before {
@@ -333,93 +329,75 @@ html.transition *:after {
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 354.5px;
-    stroke-dashoffset: 353.08px;
-    animation: logo-path 1.5s ease forwards 0.2s;
-}
-
-#logo path:nth-child(2){
-    stroke-dasharray: 100px;
-    stroke-dashoffset: 100px;
-    animation: logo-path 1.5s ease forwards 0.4s;
-}
-
-#logo path:nth-child(3){
     stroke-dasharray: 470px;
     stroke-dashoffset: 470px;
     animation: logo-path 1.5s ease forwards 0.6s;
 }
 
-#logo path:nth-child(4){
+#logo path:nth-child(2){
     stroke-dasharray: 246px;
     stroke-dashoffset: 246px;
     animation: logo-path 1.5s ease forwards 0.8s;
 }
 
-#logo path:nth-child(5){
+#logo path:nth-child(3){
     stroke-dasharray: 184px;
     stroke-dashoffset: 184px;
     animation: logo-path 1.5s ease forwards 1s;
 }
 
-#logo path:nth-child(6){
+#logo path:nth-child(4){
     stroke-dasharray: 76px;
     stroke-dashoffset: 76px;
     animation: logo-path 1.5s ease forwards 1.2s;
 }
 
-#logo path:nth-child(7){
+#logo path:nth-child(5){
     stroke-dasharray: 388px;
     stroke-dashoffset: 388px;
     animation: logo-path 1.5s ease forwards 1.3s;
 }
 
-#logo path:nth-child(8){
+#logo path:nth-child(6){
     stroke-dasharray: 264px;
     stroke-dashoffset: 264px;
     animation: logo-path 1.5s ease forwards 1.5s;
 }
 
-#logo path:nth-child(9){
+#logo path:nth-child(7){
     stroke-dasharray: 100px;
     stroke-dashoffset: 100px;
     animation: logo-path 1.5s ease forwards 1.8s;
 }
 
-#logo path:nth-child(10){
+#logo path:nth-child(8){
     stroke-dasharray: 315px;
     stroke-dashoffset: 315px;
     animation: logo-path 1.5s ease forwards 1.3s;
 }
 
-#logo path:nth-child(11){
+#logo path:nth-child(9){
     stroke-dasharray: 264px;
     stroke-dashoffset: 264px;
     animation: logo-path 1.5s ease forwards 1s;
 }
 
-#logo path:nth-child(12){
+#logo path:nth-child(10){
     stroke-dasharray: 354px;
     stroke-dashoffset: 354px;
     animation: logo-path 1.5s ease forwards 0.8s;
 }
 
-#logo path:nth-child(13){
+#logo path:nth-child(11){
     stroke-dasharray: 264px;
     stroke-dashoffset: 264px;
     animation: logo-path 1.5s ease forwards 0.6s;
 }
 
-#logo path:nth-child(14){
+#logo path:nth-child(12){
     stroke-dasharray: 315px;
     stroke-dashoffset: 315px;
     animation: logo-path 1.5s ease forwards 0.4s;
-}
-
-#logo path:nth-child(15){
-    stroke-dasharray: 184px;
-    stroke-dashoffset: 184px;
-    animation: logo-path 1.5s ease forwards 0.2s;
 }
 
 @keyframes logo-path {
@@ -440,3 +418,26 @@ html.transition *:after {
 }
 
 /* =============== end of SVG logo ===================*/
+
+@media screen and (max-width: 900px) {
+
+    .creativity {
+        margin: 20px auto;
+        padding-left: 30px;
+    }
+    nav {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: var(--bg-nav);
+    }
+
+    .clockFrame {
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        transform: scale(0.5);
+        margin-left: 0;
+    }
+
+}
