@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -163,7 +164,7 @@ html.transition *:after {
 }
 
 /* ============== BACKGROUND overlay grid ====== */
-.container {
+.content {
     position: absolute;
     width: 80vw;
     height: 100vh;
@@ -173,7 +174,7 @@ html.transition *:after {
     grid-gap: 3vh;
     }
     
-    .img {
+    .content .img {
         background-image: url(./acecards.jpg);
         background-repeat: no-repeat;
         background-size: cover;
