@@ -80,7 +80,7 @@ nav {
     height: 200px;
     background: var(--bg-nav);
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 0px;
     display: flex;
     flex-flow: column;
